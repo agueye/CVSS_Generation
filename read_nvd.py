@@ -4,6 +4,8 @@ from os.path import isfile, join
 import gzip
 import json
 
+# Reading the CVSS and generating the vectors and scores
+
 files = [f for f in listdir("../nvd/") if isfile(join("../nvd/", f))]
 files.sort(reverse=True)
 print(files)
